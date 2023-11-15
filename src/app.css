@@ -7,3 +7,50 @@
   border: 1px solid green;
   padding: 0 10px;
 }
+
+.calendarApp--screen-day-b {
+  border: 1px solid green;
+  padding: 0 10px;
+}
+
+.day-in-month-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.day-in-month {
+  width: 50px;
+  height: 50px;
+  border: 1px solid green;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-in-month:hover {
+  border: 1px solid orange;
+  color: orange;
+  cursor: pointer;
+}
+
+.xxx {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.month-select {
+  margin-right: 15px;
+}
+
+.year-select {
+}
+
+.day-planner {
+  height: 200px;
+  width: 400px;
+  display: block;
+}
