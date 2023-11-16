@@ -54,3 +54,27 @@
   width: 400px;
   display: block;
 }
+
+.advent-lifetime-view {
+  border: 1px solid green;
+  padding: 0 10px;
+
+}
+
+.advent-lifetime-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.year-square {
+  border: 1px solid green;
+  padding: 10px;
+  
+}
+
+.year-square:hover {
+  border: 1px solid purple;
+  color: purple;
+  cursor: pointer;
+}

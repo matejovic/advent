@@ -94,6 +94,47 @@ export function App() {
           <p>no day was selected...</p>
         )}
       </div>
+      
+      <br />
+      
+      <div className="advent-lifetime-view">
+          
+          <AdventLifetimeView />
+      </div>
     </>
   );
+}
+
+
+function AdventLifetimeView(props) {
+  const [yearBorn, setYearBorn] = useState(1995);  // could be exact date
+  const [lifetimeExpectancy, setLifetimeExpectancy] = useState(67); // default could be average expectancies. Should be a range or a function.
+  const currentYear = 2023
+  
+  // with these 3 variables we should be able to calculate current year in user's life
+  // and display how many years are left. 
+  
+  return (
+    <>
+    <div>
+      <div className="xxx">
+        <h3>Advent Lifetime View</h3>
+        <div>
+          <input type="number" min="1900" max="2024" value="{yearBorn}" />
+          <input type="number" min="1" max="125" value="{lifetimeExpectancy}" />
+        </div>
+      </div>
+    </div>
+    
+    <div className="advent-lifetime-overview">
+      {Array.from({ length: lifetimeExpectancy }).map((_, i) => (
+        <div className="year-square">
+           {i+1}
+        </div>
+      ))}
+    </div>
+      
+    </>
+  )
+  
 }
